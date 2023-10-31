@@ -65,8 +65,8 @@ const PokemonInfo = () => {
         </p>
       </div>
 
-      <button onClick={hadleGoHome} className="text-3xl md:text-4xl absolute z-10 right-1 md:right-3 top-2 sm:top-3 hover:scale-105 active:scale-100 duration-100 dark:opacity-80">🏠</button>
-      <button onClick={hadleSetting} className="text-3xl md:text-4xl absolute z-10 right-0 md:right-2 top-12 sm:top-14 md:top-16 hover:scale-105 active:scale-100 duration-100 dark:opacity-80">⚙</button>
+      <button onClick={hadleSetting} className="text-3xl md:text-4xl absolute z-10 right-0 md:right-2 top-2 sm:top-3 hover:scale-105 active:scale-100 duration-100 dark:opacity-80">⚙</button>
+      <button onClick={hadleGoHome} className="text-3xl md:text-4xl absolute z-10 right-0 md:right-2 top-12 sm:top-14 md:top-16 hover:scale-105 active:scale-100 duration-100 dark:opacity-80">🔙</button>
 
       <article className={`${isLargeScreen ? "mt-28" : isTightScreen ? "mt-14" : "mt-10"} z-10 mb-16 pb-20 mx-auto w-[85%] grid gap-3 shadow-2xl dark:opacity-70 bg-white dark:bg-slate-300 rounded-sm`}>
         <header className={`${bgByType[pokemon?.types[0].type.name]} relative h-[105px] md:h-[145px] lg:h-[165px] xl:h-[185px] rounded-t-sm mx-1 sm:mx-2`}>
