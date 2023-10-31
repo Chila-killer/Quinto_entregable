@@ -65,8 +65,8 @@ const PokemonInfo = () => {
         </p>
       </div>
 
-      <button onClick={hadleSetting} className="text-3xl md:text-4xl absolute z-10 right-0 md:right-2 top-2 sm:top-3 hover:scale-105 active:scale-100 duration-100 dark:opacity-80">⚙</button>
-      <button onClick={hadleGoHome} className="text-3xl md:text-4xl absolute z-10 right-0 md:right-2 top-12 sm:top-14 md:top-16 hover:scale-105 active:scale-100 duration-100 dark:opacity-80">🔙</button>
+      <button onClick={hadleSetting} className="text-3xl md:text-4xl absolute z-10 right-1 md:right-2 top-2 sm:top-3 hover:scale-105 active:scale-100 duration-100 dark:opacity-80">⚙</button>
+      <button onClick={hadleGoHome} className="text-3xl md:text-4xl absolute z-10 right-1 md:right-2 top-12 sm:top-14 md:top-16 hover:scale-105 active:scale-100 duration-100 dark:opacity-80">🔙</button>
 
       <article className={`${isLargeScreen ? "mt-28" : isTightScreen ? "mt-14" : "mt-10"} z-10 mb-16 pb-20 mx-auto w-[85%] grid gap-3 shadow-2xl dark:opacity-70 bg-white dark:bg-slate-300 rounded-sm`}>
         <header className={`${bgByType[pokemon?.types[0].type.name]} relative h-[105px] md:h-[145px] lg:h-[165px] xl:h-[185px] rounded-t-sm mx-1 sm:mx-2`}>
@@ -91,10 +91,10 @@ const PokemonInfo = () => {
         <section className="w-[80%] mx-auto gap-1 sm:gap-5 grid">
           <h3 className={`${textByType[pokemon?.types[0].type.name]} text-[33px] font-medium`}>#{pokemon?.id}</h3>
 
-          <div className="flex w-full justify-center mx-auto gap-11">
-            <hr className="dark:border-[#929292] w-[35%] self-center bg-[#dfdfdf] h-[2px]" />
-            <h2 className={`${textByType[pokemon?.types[0].type.name]} text-xl sm:text-[38px] font-medium`}>{pokemon?.name}</h2>
-            <hr className="dark:border-[#929292] w-[35%] self-center bg-[#dfdfdf] h-[2px]" />
+          <div className="grid grid-flow-col w-full mx-auto gap-11">
+            <hr className="dark:border-[#929292] w-full self-center bg-[#dfdfdf] h-[2px]" />
+            <h2 className={`${textByType[pokemon?.types[0].type.name]} text-xl sm:text-[38px] font-medium w-full`}>{pokemon?.name}</h2>
+            <hr className="dark:border-[#929292] w-full self-center bg-[#dfdfdf] h-[2px]" />
           </div>
 
           <section className="grid grid-cols-2 mx-auto gap-24">
